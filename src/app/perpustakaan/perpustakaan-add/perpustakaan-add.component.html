@@ -1,0 +1,31 @@
+<h4>Input Buku Perpustakaan</h4>
+	<div class = "container">
+		<div class = "row">
+			<div class = "col-sm-12">
+				<div class = "form-group row">
+					<label for = "inputIsbn" class = "col-sm-3 form-control-label">ISBN {{inputInfo.isbn}}</label>
+					<div class = "col-sm-9">
+						<input type = "text" class="form-control"
+						[(ngModel)]="inputInfo.isbn" id="inputIsbn" >
+					</div>
+				</div>
+				<div class = "form-group row">
+					<label for="inputnamaBuku" class="col-sm-3 form-control-label">Nama Buku </label>
+					<div class ="col-sm-9">
+						<input type="text" class="form-control" id="inputnamaBuku"
+						 value = "{{perpustakaanEditParent.namaBuku}}" [(ngModel)]="inputInfo.namaBuku"  >
+					</div>
+				</div>
+				<div class = "form-group row">
+					<label for = "inputqty" class = "col-sm-3 form-control-label">Qty.</label>
+					<div class = "col-sm-9">
+						<input type = "text" class="form-control" 
+						value ="{{perpustakaanEditParent.qty}}" [(ngModel)]="inputInfo.qty" id="inputqty" >
+					</div>
+				</div>
+			</div>
+		</div>
+		<button type="Add" class="btn btn-success" (click)="tambahBuku( inputNamaBuku )">Add Friends</button>
+	</div>
+				
+

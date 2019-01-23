@@ -1,0 +1,6 @@
+
+<app-perpustakaan-add [perpustakaanEditParent]=perpustakaanEdit (perpustakaanAdded)="onPerpustakaanAdded($event)" >
+</app-perpustakaan-add>
+
+<app-perpustakaan-list [perpustakaanParent]=perpustakaanList 
+(dariChildKeParent)="onPerpustakaanEdit($event)"></app-perpustakaan-list>
